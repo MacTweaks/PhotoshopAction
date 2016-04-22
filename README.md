@@ -1,6 +1,7 @@
 # artFileTool-photoshop-action
 
 **How to make a Photoshop Action**
+
 1. Open Action Tab via Window > Action
 
 2. Press New Folder
@@ -19,6 +20,7 @@
 
 
 **photoshop action**
+
 1. Install Xcode 
 
 2. Install Command Line Tools 
