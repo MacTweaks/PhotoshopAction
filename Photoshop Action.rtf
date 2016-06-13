@@ -1,0 +1,69 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11905\paperh16837\margl1011\margr1011\margb1445\margt1009\vieww8620\viewh11460\viewkind0\viewscale124
+\deftab720
+\pard\pardeftab720\sl260
+
+\f0\b\fs16 \cf0 Photoshop Action for artFileTool
+\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+\cf0 You can use bash and regex to bulk edit the images in ArtFiles.bin to view which images affect what areas. This speeds up the otherwise tedious process.\
+\
+This will cause the GUI to display what look like glitches because the modified files will not be the right dimensions. Only test a few folders each time so that you can still navigate properly.\
+\
+I split the artfiles folder into groups and then added them to ArtFile.bin sequentially to narrow down on what folders have effected which elements and so that I could still navigate the interface.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\b \cf0 \
+\
+How to Make a Photoshop Action\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\b0 \cf0 1. Open Action Tab via Window > Action\'a0\
+2. Press New Folder\'a0\
+3. Press New Action\
+4. Import one of the .png files\'a0\
+5. Press Record\'a0\
+6. Delete the layer and/or add fill layer\'a0 \
+7. Stop Record\'a0\
+8. Open File > Script\'a0\
+\
+{\field{\*\fldinst{HYPERLINK "https://helpx.adobe.com/photoshop/using/creating-actions.html"}}{\fldrslt https://helpx.adobe.com/photoshop/using/creating-actions.html}}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\b \cf0 Photoshop Action\
+\pard\pardeftab720\sl260
+
+\b0 \cf0 \
+1. Install Xcode\'a0\
+\
+2. Install Command Line Tools\'a0\
+\
+3. Install {\field{\*\fldinst{HYPERLINK "https://www.macports.org/"}}{\fldrslt https://www.macports.org/}}\
+\
+4. Install {\field{\*\fldinst{HYPERLINK "http://www.imagemagick.org/script/index.php"}}{\fldrslt http://www.imagemagick.org/script/index.php}}\
+\
+5. Run the Photoshop Action\'a0\
+\
+6. Delete all .png files using the search function in Finder\'a0\
+\
+7. In Terminal cd to the folder\'a0\
+\
+8. Convert .psd files to .png \
+\
+find . -type f -iname '*.psd' | sed -E "s/^((.*)\\.psd)$/convert '\\1' '\\2.png'/" | bash\
+\
+9. Delete all .psd files using the search function in Finder\'a0\
+\
+10. Rename files ending in -01 \
+\
+find . -type f -iname '*-0.png' | sed -E "s/^((.*)-0.png)$/mv '\\1' '\\2'.png/" | bash\
+\
+11. Delete files ending in all other numbers \
+\
+find . -type f -iname '*-[123456789].png' -delete\
+\
+
+{\*\beandata789c9d935d6f82301486aff157748db752d876b12d8851c1c4cc2099b86497153a65e32ba5cef1ef57444aeb66b68c1bda73fabe4f7b4e6b8d3ed3047c105ac6793684a66e4040b2308fe26c3b84eb6036b88323bb675d39cb69f0e2bba048e292017f3d59cca7000e101a17454210720207f88bf92a00dc0321d78300ee182b1e103a1c0e3aae57e9619ed60b4be4d3bc2094550b6e36e0023d6211e498c65dd90e8f4671c8ec9e66bd93caee631aee62bec242f594474b46f9666d6ff5482a128d45fa146f75f9e68d84ac14324c29ae07c2a09fed934492692d573b3984092e855e4e37f9e9acbf9e3b5d5eb3e28c912da1f6ad85dae1518854636fa5f39fec2cf6a6502e603aceb5ca5140a8f36ca16715f93ff7e64fdc2eda567ce28ebd27f6ead6f78d778ef1e866cf48f9dcf4dfdba71ba591d2490dd334ee0df5c03ff68b5c3a9fb8360e57711aa6958c92572c8f8552b2dfead9d0329c1289f70b4354a4736bbc585e887b2a8a56cf2704670e665830cece7cde24513053ad540756ded6e9e109b6501bf52759b43a0b1d5facddfb02aa1d4161}}
