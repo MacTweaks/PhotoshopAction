@@ -8,12 +8,19 @@ I split the artfiles folder into groups and then added them to ArtFile.bin seque
 **How to Make a Photoshop Action**
 
 1) Open Action Tab via Window > Action 
+
 2) Press New Folder 
+
 3) Press New Action
+
 4) Import one of the .png files 
+
 5) Press Record 
+
 6) Delete the layer and/or add fill layer  
+
 7) Stop Record 
+
 8) Open File > Script 
 
 
