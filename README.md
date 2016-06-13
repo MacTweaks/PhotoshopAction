@@ -1,6 +1,6 @@
 **Hosted by [MacTweaks](http://www.mactweaks.net)**
 
-**Photoshop Action for artFileTool**
+##Photoshop Action for artFileTool
 
 You can use bash and regex to bulk edit the images in ArtFiles.bin to view which images affect what areas. This speeds up the otherwise tedious process.
 
@@ -30,6 +30,7 @@ I split the artfiles folder into groups and then added them to ArtFile.bin seque
 
 https://helpx.adobe.com/photoshop/using/creating-actions.html
 
+--
 
 **Photoshop Action**
 
