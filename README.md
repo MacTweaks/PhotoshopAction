@@ -23,6 +23,8 @@ I split the artfiles folder into groups and then added them to ArtFile.bin seque
 
 8) Open File > Script 
 
+https://helpx.adobe.com/photoshop/using/creating-actions.html
+
 
 **Photoshop Action**
 
