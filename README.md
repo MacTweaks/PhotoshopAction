@@ -8,6 +8,7 @@ This will cause the GUI to display what look like glitches because the modified 
 
 I split the artfiles folder into groups and then added them to ArtFile.bin sequentially to narrow down on what folders have effected which elements and so that I could still navigate the interface.
 
+--
 
 **How to Make a Photoshop Action**
 
