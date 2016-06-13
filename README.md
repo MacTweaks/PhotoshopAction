@@ -1,5 +1,7 @@
 **Photoshop Action for artFileTool**
 
+You can use bash and regex to bulk edit the images in ArtFiles.bin to view which images affect what areas. This speeds up the otherwise tedious process.
+
 This will cause the GUI to display what look like glitches because the modified files will not be the right dimensions. Only test a few folders each time so that you can still navigate properly.
 
 I split the artfiles folder into groups and then added them to ArtFile.bin sequentially to narrow down on what folders have effected which elements and so that I could still navigate the interface.
