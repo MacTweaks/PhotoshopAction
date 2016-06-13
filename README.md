@@ -1,4 +1,4 @@
-**Hosted by [MacTweaks](https://www.mactweaks.net)**
+**Hosted by [MacTweaks](http://www.mactweaks.net)**
 
 **Photoshop Action for artFileTool**
 
